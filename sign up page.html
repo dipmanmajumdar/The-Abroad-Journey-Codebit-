@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'lucida ', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9fc;
+            color: #333;
+            font-size: 20px;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            display: flex;
+            width: 200%;
+            max-width: 1600px;
+            background: #ffffff;
+            border-radius: 15px;
+            overflow-y: auto;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        .form-section {
+            flex: 1;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: first baseline;
+        }
+        
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9fc;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-btn {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #6b5bff;
+        }
+        
+        .social-btn:hover {
+            background-color: #650e7d;
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .divider span {
+            margin: 0 auto;
+            color: #aaa;
+        }
+        
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        form input:focus {
+            border-color: #6b5bff;
+            box-shadow: 0 0 10px rgba(107, 91, 255, 0.5);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #df7fd7;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #650e7d;
+        }
+        
+        .already-account {
+            margin-top: 5px;
+            text-align: center;
+        }
+        
+        .already-account a {
+            color: #df64bc;
+            text-decoration: none;
+        }
+        
+        footer {
+            font-size: 17px;
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+        
+        footer a {
+            color: #c066bb;
+            text-decoration: none;
+        }
+        
+        .illustration-section {
+            flex: 1;
+            background-color: #f4ebff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left: Form Section -->
+        <div class="form-section">
+            <div class="form-container">
+                <h2>Sign Up to start your journey</h2>
+                <div class="divider">
+                </div>
+                <form id="sign-up-form">
+                    <label for="name"> Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>    
+                    <label for="User Name">User Name</label>
+                    <input type="text" id=" User name" placeholder="Enter your User name" required>    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                    <div class="error-message" id="dob-error"></div>
+                    
+                    <a href="file:///E:/The%20Abroad%20Campus/Dashboard%20Page/desgin%203/home.html" class="submit-btn" style="text-decoration: none;">
+                        <button type="button" class="submit-btn">Create My Account</button>
+                    </a>
+                    
+                </form>
+                <p class="already-account">Already have an account? <a href="file:///E:/The%20Abroad%20Campus/sign%20in%20page.html">Login</a></p>
+            </div>
+        </div>
+
+        <!-- Right: Illustration -->
+        <div class="illustration-section">
+            <div class="illustration">
+                <img src="https://fly.io/phx/ui/images/open-door-82761c378ff04031e9499d073e09c232.jpg?vsn=d" alt="Illustration">
+            </div>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('sign-up-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            // Add your sign up logic here
+            console.log(name, email, password);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html><html lang="en-US" class="h-full motion-on" data-menu-state="off" data-motion="off"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="csrf-token" content="NylnNQE8Cjs1EQRKTQUGAyFFFy0jHA5SVaJXCDbsvc33ySu6F0UFOUv0">
+
+  <title>The Abroad Campus - </title>
+
+  <meta content="origin" name="referrer">
+  <meta content="True" name="HandheldFriendly">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script src="js/events.js"></script>
+
+
+<link href="images/apple-touch-icon-3e4c9ce127b5cd6f5516638d4bbf1dd5.png" rel="apple-touch-icon" sizes="180x180">
+<link href="images/favicon-32x32-803ad2058b86df3f8a9f8af1505a59d2.png" rel="icon" sizes="32x32" type="image/png">
+<link href="images/favicon-16x16-6963a8113fc4dc87910c17c4279a9bd4.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/phx/ui/images/favicon/site-4ed2b515513825854b905e85931b4a55.webmanifest?vsn=d" rel="manifest">
+<link href="images/safari-pinned-tab-987c7fc8f545337872c691fbc736e9c4.svg" rel="mask-icon" color="#4d7cfe">
+<meta content="#4d7cfe" name="msapplication-TileColor">
+<meta content="#ffffff" name="theme-color">
+  <style>
+html:not(.motion-on) * { 
+  transition: none !important; 
+  animation: none !important;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.add('motion-on')
+})
+</script>
+
+
+
+<!-- CSS -->
+  <style>
+@font-face {
+  font-family: 'Fricolage Grotesque';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(fonts/fricolage-grotesque.var.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: 'Mackinac';
+  src: url("fonts/mackinac-medium.woff2") format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Mackinac';
+  src: url("fonts/mackinac-medium-italic.woff2") format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Mackinac';
+  src: url("fonts/mackinac-bold.woff2") format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Mackinac';
+  src: url("fonts/mackinac-bold-italic.woff2") format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Fragment Mono';
+  src: url("fonts/fragment-mono-regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Fragment Mono';
+  src: url("fonts/fragment-mono-italic.woff2") format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+</style>
+
+<script>
+var fontsInServiceWorker = sessionStorage.foutFontsStage1Loaded && sessionStorage.foutFontsStage2Loaded || ('serviceWorker' in navigator && navigator.serviceWorker.controller !== null && navigator.serviceWorker.controller.state === 'activated')
+if (!fontsInServiceWorker && 'fonts' in document) {
+  function fetchFonts(fonts) {
+    return Promise.all(fonts.map(function (font) {
+      return document
+        .fonts
+        .load(font);
+    }));
+  }
+
+  if (sessionStorage.foutFontsStage2Loaded) {
+    document.documentElement.className += " wf-loaded-stage2";
+  } else {
+    sessionStorage.foutFontsStage1Loaded = true;
+  };
+}
+
+if ("fonts" in document) {
+  let sansRoman = new FontFace(
+    "Fricolage Grotesque",
+    "url('/phx/ui/fonts/fricolage-grotesque.var.woff2') format('woff2')",
+    {
+      weight: "100 900",
+      style: "normal"
+    }
+  );
+
+  let serifMedium = new FontFace(
+    "Mackinac",
+    "url('/phx/ui/fonts/mackinac-medium.woff2') format('woff2')",
+    { weight: "500" }
+  );
+
+  let serifMediumItalic = new FontFace(
+    "Mackinac",
+    "url('/phx/ui/fonts/mackinac-medium-italic.woff2') format('woff2')",
+    { 
+      weight: "500", 
+      style: "italic" 
+    }
+  );
+
+  let serifBold = new FontFace(
+    "Mackinac",
+    "url('/phx/ui/fonts/mackinac-bold.woff2') format('woff2')",
+    { weight: "700" }
+  );
+
+  let serifBoldItalic = new FontFace(
+    "Mackinac",
+    "url('/phx/ui/fonts/mackinac-bold-italic.woff2') format('woff2')",
+    { 
+      weight: "700", 
+      style: "italic" 
+    }
+  );
+
+  let monoRegular = new FontFace(
+    "FragmentMono",
+    "url('/phx/ui/fonts/fragment-mono-regular.woff2') format('woff2')",
+    { weight: "400" }
+  );
+
+  let monoItalic = new FontFace(
+    "FragmentMono",
+    "url('/phx/ui/fonts/fragment-mono-italic.woff2') format('woff2')",
+    { 
+      weight: "400", 
+      style: "italic" 
+    }
+  );
+
+  let loadedFonts = Promise.all([
+    sansRoman.load(),
+    serifMedium.load(),
+    serifMediumItalic.load(),
+    serifBold.load(),
+    serifBoldItalic.load(),
+    monoRegular.load(),
+    monoItalic.load()
+    
+  ]).then(result => {
+    result.forEach(font => document.fonts.add(font));
+    document.documentElement.classList.add('wf-loaded-stage2');
+    sessionStorage.foutFontsStage2Loaded = true;
+  }).catch(error => {
+    throw new Error(`Error caught: ${error}`);
+  });
+
+}
+
+if (
+  (sessionStorage.foutFontsStage1Loaded &&
+    sessionStorage.foutFontsStage2Loaded) ||
+  ('serviceWorker' in navigator &&
+    navigator.serviceWorker.controller !== null &&
+    navigator.serviceWorker.controller.state === 'activated')
+) {
+
+  document.documentElement.classList.add('wf-loaded-stage2')
+}
+</script>
+
+<link rel="preload" href="/phx/ui/fonts/fricolage-grotesque.var.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/phx/ui/fonts/mackinac-medium.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/phx/ui/fonts/mackinac-medium-italic.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/phx/ui/fonts/mackinac-bold.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/phx/ui/fonts/mackinac-bold-italic.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/phx/ui/fonts/fragment-mono-regular.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/phx/ui/fonts/fragment-mono-italic.woff2" as="font" type="font/woff2" crossorigin="">
+
+  <link phx-track-static="" rel="stylesheet" href="css/app-c97444354cb91685faaa03d2774519b4.css">
+
+  <script>
+    document.documentElement.classList.remove("no-js")
+  </script>
+  <style>
+    .no-js [data-src] {
+      display: none;
+    }
+  </style>
+  <script defer="" phx-track-static="" type="text/javascript" src="js/app-77f6dc3d3cd698d2a6863d8908556ecd.js">
+  </script>
+  
+
+
+</head>
+
+<body class="w-full min-h-full">
+<header class="navbar relative z-[500] container mx-auto px-4 sm:px-6 lg:px-8 flex items-center h-24 text-navy font-medium text-sm" data-menu-container="">
+<nav aria-label="Logo menu" class="relative z-[60] flex">
+  <a href="/" aria-label="The Abroad Campus logo: a stylized white and purple hot air balloon on a deep purple background">
+  
+    
+    <!-- Fly Heading Image Source -->
+    <br><br><br><br><br><img src="file:///D:/CodeX/Abroad%20Campus/Fly%20Web%20Code/Logo%202%20(B).png" alt="Logo" style="width: 200px; height: 170px; pointer-events: none;">
+
+
+  
+    
+  
+</title>
+<desc id="description-GBEb_n6xS9GGIU-y">
+  
+    
+  
+</desc>
+
+<g buffered-rendering="static">
+
+    <path d="M57.413 10.134h9.454c8.409 0 15.236 6.827 15.236 15.236v33.243c0 8.409-6.827 15.236-15.236 15.236h-.745c-4.328-.677-6.205-1.975-7.655-3.072l-12.02-9.883a1.692 1.692 0 0 0-2.128 0l-3.905 3.211-10.998-9.043a1.688 1.688 0 0 0-2.127 0L12.01 68.503c-3.075 2.501-5.109 2.039-6.428 1.894C2.175 67.601 0 63.359 0 58.613V25.37c0-8.409 6.827-15.236 15.237-15.236h9.433l-.017.038-.318.927-.099.318-.428 1.899-.059.333-.188 1.902-.025.522-.004.183.018.872.043.511.106.8.135.72.16.663.208.718.54 1.52.178.456.94 1.986.332.61 1.087 1.866.416.673 1.517 2.234.219.296 1.974 2.569.638.791 2.254 2.635.463.507 1.858 1.999.736.762 1.216 1.208-.244.204-.152.137c-.413.385-.805.794-1.172 1.224a10.42 10.42 0 0 0-.504.644 8.319 8.319 0 0 0-.651 1.064 6.234 6.234 0 0 0-.261.591 5.47 5.47 0 0 0-.353 1.606l-.007.475a5.64 5.64 0 0 0 .403 1.953 5.44 5.44 0 0 0 1.086 1.703c.338.36.723.674 1.145.932.359.22.742.401 1.14.539a6.39 6.39 0 0 0 2.692.306h.005a6.072 6.072 0 0 0 2.22-.659c.298-.158.582-.341.848-.549a5.438 5.438 0 0 0 1.71-2.274c.28-.699.417-1.446.405-2.198l-.022-.393a5.535 5.535 0 0 0-.368-1.513 6.284 6.284 0 0 0-.285-.618 8.49 8.49 0 0 0-.67-1.061 11.022 11.022 0 0 0-.354-.453 14.594 14.594 0 0 0-1.308-1.37l-.329-.28.557-.55 2.394-2.5.828-.909 1.287-1.448.837-.979 1.194-1.454.808-1.016 1.187-1.587.599-.821.85-1.271.708-1.083 1.334-2.323.763-1.524.022-.047.584-1.414a.531.531 0 0 0 .02-.056l.629-1.962.066-.286.273-1.562.053-.423.016-.259.019-.978-.005-.182-.05-.876-.062-.68-.31-1.961c-.005-.026-.01-.052-.018-.078l-.398-1.45-.137-.403-.179-.446Zm4.494 41.455a3.662 3.662 0 0 0-3.61 3.61 3.663 3.663 0 0 0 3.61 3.609 3.665 3.665 0 0 0 3.611-3.609 3.663 3.663 0 0 0-3.611-3.61Z" fill="url(#h4g_Radial1)"></path>
+
+  <path d="M35.639 72.544l-.637.535a3.332 3.332 0 01-2.09.762H15.235a15.176 15.176 0 01-9.654-3.451c1.319.145 3.353.607 6.428-1.894l15.277-13.44a1.693 1.693 0 012.127 0l10.997 9.042 3.904-3.21c.619-.5 1.51-.5 2.128 0l12.019 9.882c1.45 1.097 3.327 2.394 7.654 3.071H58.12a3.394 3.394 0 01-1.963-.654l-.14-.108-.593-.493a1.247 1.247 0 00-.158-.159c-.672-.563-9.187-7.617-9.187-7.617a1 1 0 00-1.281.002s.021.026-9.038 7.615a1.12 1.12 0 00-.121.117zm26.262-20.96a3.678 3.678 0 00-3.61 3.609 3.68 3.68 0 003.61 3.609 3.68 3.68 0 003.61-3.609 3.678 3.678 0 00-3.61-3.609zM38.566 40.648L37.35 39.44l-.736-.762-1.858-1.999-.463-.507-2.253-2.634-.638-.791-1.974-2.569-.219-.296-1.517-2.234-.416-.673-1.087-1.866-.332-.61-.94-1.985-.178-.456-.539-1.52-.208-.718-.16-.663-.135-.72-.106-.8-.043-.511-.018-.872.004-.183.025-.522.188-1.901.059-.333.428-1.899.098-.318.318-.927.102-.24.506-1.112.351-.662.489-.806.487-.718.347-.456.4-.482.44-.484.377-.378.918-.808.671-.549c.016-.014.033-.026.05-.038l.794-.537.631-.402 1.198-.631c.018-.011.039-.02.058-.029l1.698-.705.157-.059 1.51-.442.638-.143.862-.173.572-.087.877-.109.598-.053 1.187-.063.465-.005.881.018.229.013 1.276.106 1.687.238.195.041 1.668.415.49.146.544.188.663.251.524.222.77.363.485.249.872.512.325.2 1.189.868.341.296.828.754.041.041.703.754.242.273.825 1.096.168.262.655 1.106.197.379.369.825.386.963.137.403.398 1.45a.89.89 0 01.018.078l.31 1.961.062.679.05.876.005.182-.019.978-.016.259-.053.423-.273 1.562-.066.286-.629 1.962a.626.626 0 01-.02.056l-.584 1.414-.022.047-.763 1.523-1.334 2.323-.708 1.083-.849 1.271-.599.821-1.187 1.587-.808 1.016-1.194 1.453-.837.979-1.287 1.448-.828.909-2.394 2.5-.556.55.328.28c.465.428.902.885 1.308 1.37.122.148.24.299.354.453.249.336.473.691.67 1.06.106.2.201.407.285.618.191.484.32.996.368 1.513l.022.393c.012.752-.125 1.5-.405 2.198a5.438 5.438 0 01-1.71 2.274c-.266.208-.55.391-.848.549a6.08 6.08 0 01-2.219.659h-.005a6.403 6.403 0 01-2.692-.306 5.882 5.882 0 01-1.14-.539 5.523 5.523 0 01-1.145-.932 5.458 5.458 0 01-1.086-1.703 5.662 5.662 0 01-.403-1.953l.007-.475a5.47 5.47 0 01.353-1.606c.077-.202.164-.399.261-.591.19-.37.408-.725.651-1.063.159-.221.328-.436.504-.644.367-.43.759-.839 1.172-1.224l.152-.137.244-.204z" class="fill-current"></path>
+  <path d="M35.002 73.079l9.796-8.267a1 1 0 011.281-.002l9.938 8.269c.604.492 1.36.761 2.139.762h-25.28c.776 0 1.527-.269 2.126-.762zM41.1 43.568l.096.028c.031.015.057.036.085.055l.08.071c.198.182.39.373.575.569.13.139.257.282.379.43.155.187.3.383.432.587.057.09.11.181.16.276.043.082.082.167.116.253.06.15.105.308.119.469l-.003.302a1.726 1.726 0 01-.817 1.343 2.333 2.333 0 01-.994.327l-.373.011-.315-.028a2.398 2.398 0 01-.433-.105 2.07 2.07 0 01-.41-.192l-.246-.18a1.685 1.685 0 01-.56-.96 2.418 2.418 0 01-.029-.19l-.009-.288c.005-.078.017-.155.034-.232.043-.168.105-.331.183-.486.101-.194.216-.381.344-.559.213-.288.444-.562.691-.821.159-.168.322-.331.492-.488l.121-.109c.084-.055.085-.055.181-.083h.101zM40.481 3.42l.039-.003v33.665l-.084-.155a94.101 94.101 0 01-3.093-6.267 67.257 67.257 0 01-2.099-5.255 41.665 41.665 0 01-1.265-4.326c-.265-1.163-.469-2.343-.553-3.535a16.923 16.923 0 01-.029-1.528c.008-.444.026-.887.054-1.33.044-.696.115-1.391.217-2.081.081-.543.181-1.084.304-1.619.098-.425.212-.847.342-1.262.188-.6.413-1.186.675-1.758.096-.206.199-.411.307-.612.65-1.204 1.532-2.313 2.687-3.054a5.609 5.609 0 012.498-.88zm4.365.085l2.265.646c1.049.387 2.059.891 2.987 1.521a11.984 11.984 0 013.212 3.204c.502.748.918 1.555 1.243 2.398.471 1.247.763 2.554.866 3.882.03.348.047.697.054 1.046.008.324.006.649-.02.973-.064.725-.2 1.442-.407 2.14a17.03 17.03 0 01-.587 1.684c-.28.685-.591 1.357-.932 2.013-.754 1.457-1.623 2.852-2.553 4.201a65.451 65.451 0 01-3.683 4.806 91.02 91.02 0 01-4.417 4.896 93.66 93.66 0 002.907-5.949c.5-1.124.971-2.26 1.414-3.407.487-1.26.927-2.537 1.317-3.83.29-.969.546-1.948.757-2.938.181-.849.323-1.707.411-2.57.074-.72.101-1.444.083-2.166a30.867 30.867 0 00-.049-1.325c-.106-1.775-.376-3.545-.894-5.248a15.341 15.341 0 00-.714-1.892c-.663-1.444-1.588-2.793-2.84-3.778l-.42-.307z" fill="white"></path>
+
+    <path d="M179.213 64.297l-10.751-23.015c-.898-1.917-1.433-2.618-2.331-3.431l-.874-.788c-.697-.676-1.155-1.302-1.155-2.045 0-1.064.843-1.96 2.378-1.96h9.334c1.465 0 2.378.762 2.378 1.9 0 .635-.292 1.111-.661 1.578-.438.555-1.008 1.096-1.008 2.082 0 .618.18 1.234.527 2.021l6.416 15.025 5.755-14.647c.354-.974.596-1.832.596-2.519 0-1.069-.581-1.505-1.029-1.983-.39-.415-.702-.854-.702-1.557 0-1.149.935-1.9 2.193-1.9h5.748c1.612 0 2.378.834 2.378 1.9 0 .682-.393 1.314-1.166 1.996l-.813.668c-1.132.925-1.656 2.263-2.251 3.647l-8.716 20.998c-1.03 2.455-2.563 5.863-4.905 8.659-2.379 2.84-5.587 5.048-9.932 5.048-3.638 0-5.84-1.737-5.84-4.24 0-2.293 1.696-4.12 3.924-4.12 1.22 0 1.855.576 2.499 1.169.532.489 1.072.991 2.137.991.988 0 1.908-.418 2.742-1.093 1.274-1.03 2.341-2.652 3.129-4.384zm63.175-.082c4.839 0 8.804-1.658 11.897-4.967 3.09-3.304 4.636-7.281 4.636-11.931 0-4.539-1.469-8.268-4.396-11.191-2.926-2.921-6.723-4.388-11.396-4.388-4.92 0-8.944 1.597-12.077 4.78-3.135 3.186-4.703 7.045-4.703 11.578 0 4.493 1.496 8.301 4.483 11.425 2.99 3.126 6.84 4.694 11.556 4.694zm-40.921-.36c2.798 0 4.788-1.884 4.788-4.6 0-2.652-2.055-4.54-4.788-4.54-2.863 0-4.912 1.891-4.912 4.54 0 2.713 2.05 4.6 4.912 4.6zm9.964-4.305l.681-.72c.81-.787 1.071-1.582 1.071-3.774V42.097c0-1.895-.258-2.741-1.062-3.465l-.801-.718c-.785-.693-1.043-1.124-1.043-1.816 0-.984.763-1.791 1.99-2.071l5.44-1.32c.52-.126 1.107-.249 1.562-.249.626 0 1.138.206 1.497.563.36.358.572.873.572 1.517v20.518c0 2.069.251 3.031 1.115 3.758a.359.359 0 01.039.039l.608.708c.764.743 1.081 1.236 1.081 1.914 0 1.209-.912 1.9-2.377 1.9h-9.211c-1.396 0-2.316-.687-2.316-1.9 0-.681.317-1.178 1.154-1.925zm-61.567.001l.681-.721c.811-.787 1.071-1.582 1.071-3.774V27.999c0-1.835-.194-2.736-1.053-3.459l-.822-.796c-.709-.689-.968-1.116-.968-1.805 0-.985.767-1.789 1.927-2.07l5.378-1.32c.521-.126 1.107-.249 1.563-.249.621 0 1.147.187 1.522.542.376.356.608.885.608 1.598v34.616c0 2.074.258 2.981 1.125 3.766l.694.734c.769.748 1.025 1.238 1.025 1.919 0 .502-.153.907-.426 1.216-.385.435-1.03.684-1.89.684h-9.21c-.86 0-1.505-.249-1.891-.684-.272-.309-.425-.714-.425-1.216 0-.682.253-1.176 1.091-1.924zm-25.079-13.934v9.319c0 1.404.278 2.701 1.435 3.768l.748.726c.838.813 1.093 1.3 1.093 2.045 0 1.138-.913 1.9-2.378 1.9h-10.385c-1.465 0-2.377-.762-2.377-1.9 0-.884.259-1.303 1.097-2.049l.745-.724c.868-.786 1.434-1.857 1.434-3.766V30.039c0-1.517-.336-2.758-1.435-3.769l-.749-.726c-.77-.747-1.092-1.238-1.092-1.985 0-1.206.915-1.96 2.377-1.96h27.817c1.063 0 1.997.237 2.594.822.415.407.68.981.71 1.778l.433 6.421c.043.803-.194 1.472-.657 1.885-.319.284-.748.454-1.288.454-.681 0-1.203-.257-1.669-.701-.419-.399-.792-.959-1.213-1.618-1.016-1.624-1.489-2.208-2.572-2.967-1.507-1.112-3.803-1.494-8.145-1.494-2.505 0-4.086.109-5.082.366-.644.166-1.016.382-1.215.699-.204.324-.226.734-.226 1.235v12.618h6.523c1.561 0 2.659-.282 3.931-2.021l.007-.01c.51-.649.879-1.127 1.23-1.444.409-.37.802-.545 1.323-.545a1.9 1.9 0 011.883 1.901v8.699c0 1.165-.908 1.96-1.883 1.96-.485 0-.879-.173-1.289-.535-.353-.31-.723-.775-1.203-1.396-1.392-1.802-2.375-2.089-3.999-2.089h-6.523zm110.214-.22c0-3.121.68-5.364 2.089-6.713 1.392-1.332 2.888-2.006 4.496-2.006 2.212 0 4.205 1.238 6.003 3.672 1.837 2.489 2.746 5.853 2.746 10.086 0 3.124-.682 5.388-2.093 6.776-1.391 1.369-2.886 2.063-4.493 2.063-2.212 0-4.204-1.248-6.002-3.701-1.838-2.51-2.746-5.904-2.746-10.177zm-18.202-16.878c2.804 0 4.788-1.578 4.788-4.3 0-2.658-1.982-4.24-4.788-4.24-2.871 0-4.851 1.583-4.851 4.24 0 2.656 1.981 4.3 4.851 4.3z" class="fill-current"></path>
+
+</g>
+<defs>
+  <radialGradient id="h4g_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(43.593 41.714) scale(59.4764)">
+    <stop offset="0" stop-color="#ba7bf0"></stop>
+    <stop offset=".45" stop-color="#996bec"></stop>
+    <stop offset="1" stop-color="#5046e4"></stop>
+  </radialGradient>
+</defs>
+
+</svg>
+  </a>
+</nav>
+
+<!-- Header Menu -->
+
+<nav aria-label="Main menu" class="pointer-events-auto hidden lg:flex xl:w-full items-center justify-end">
+  <div class="hidden xl:flex items-center absolute left-1/2 -translate-x-1/2 rounded-full bg-white/75 bg-gradient-to-r from-pink-200/40 via-violet-200/40 to-indigo-200/40 border border-white/50 px-3 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-800/[.075] backdrop-blur-xl">
+    <dl class="flex-none bubble-wrap hidden shrink-0 xl:flex group relative px-3 py-2.5 cursor-pointer">
+      <span class="absolute inset-x-1 h-px bg-gradient-to-r from-violet-500/0 from-10% via-violet-400 to-violet-500/0 to-90% transition duration-300 -bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100">
+      </span>
+      <span class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100">
+        <span class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-violet-500/20 to-transparent blur rounded-t-full">
+        </span>
+      </span>
+      <dt class="flex items-center justify-items-center whitespace-nowrap transition-colors group-hover:text-violet-600 group-focus-within-text-violet-400">Test Prep</dt>
+      <dd class="bubble-b tail text-sm text-navy flex flex-col w-44 rounded-2xl p-2">
+        <div class="rounded-tl w-3 h-3 absolute top-0 left-1/2 z-[-1] -ml-2 rotate-45 bg-white -mt-1.5"></div>
+        <a class="relative whitespace-nowrap px-3 py-2.5 before:content-[''] before:absolute before:inset-0 before:z-[-1] before:scale-90 before:rounded-lg hocus:before:scale-100 hocus:before:bg-violet-100 before:transition-all hocus:text-violet-600 transition-colors" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20SAT/index.html">SAT</a>
+        <a class="relative whitespace-nowrap px-3 py-2.5 before:content-[''] before:absolute before:inset-0 before:z-[-1] before:scale-90 before:rounded-lg hocus:before:scale-100 hocus:before:bg-violet-100 before:transition-all hocus:text-violet-600 transition-colors" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20ACT/index.html">ACT</a>
+        <a class="relative whitespace-nowrap px-3 py-2.5 before:content-[''] before:absolute before:inset-0 before:z-[-1] before:scale-90 before:rounded-lg hocus:before:scale-100 hocus:before:bg-violet-100 before:transition-all hocus:text-violet-600 transition-colors" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20TOEFL/index.html">TOEFL</a>
+        <a class="relative whitespace-nowrap px-3 py-2.5 before:content-[''] before:absolute before:inset-0 before:z-[-1] before:scale-90 before:rounded-lg hocus:before:scale-100 hocus:before:bg-violet-100 before:transition-all hocus:text-violet-600 transition-colors" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20IELTS/index.html">IELTS</a>
+        <a class="relative whitespace-nowrap px-3 py-2.5 before:content-[''] before:absolute before:inset-0 before:z-[-1] before:scale-90 before:rounded-lg hocus:before:scale-100 hocus:before:bg-violet-100 before:transition-all hocus:text-violet-600 transition-colors" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20GMAT/index.html">GMAT</a>
+        <a class="relative whitespace-nowrap px-3 py-2.5 before:content-[''] before:absolute before:inset-0 before:z-[-1] before:scale-90 before:rounded-lg hocus:before:scale-100 hocus:before:bg-violet-100 before:transition-all hocus:text-violet-600 transition-colors" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20GRE/index.html">GRE</a></dd></dl>
+    <a class="flex-none group relative block transition duration-300 px-3 py-2.5 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/universities.html/universities.html">Universities
+      <span class="absolute inset-x-1 h-px bg-gradient-to-r from-violet-500/0 from-10% via-violet-400 to-violet-500/0 to-90% transition duration-300 -bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100">
+      </span>
+      <span class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100">
+        <span class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-violet-500/20 to-transparent blur rounded-t-full">
+        </span>
+      </span>
+    </a>
+    <a class="flex-none group relative block transition duration-300 px-3 py-2.5 hover:text-violet-600" href="#">Docs
+      <span class="absolute inset-x-1 h-px bg-gradient-to-r from-violet-500/0 from-10% via-violet-400 to-violet-500/0 to-90% transition duration-300 -bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100">
+      </span>
+      <span class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100">
+        <span class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-violet-500/20 to-transparent blur rounded-t-full">
+        </span>
+      </span>
+    </a>
+    <a class="flex-none group relative block transition duration-300 px-3 py-2.5 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/About%20Us.html">About Us
+      <span class="absolute inset-x-1 h-px bg-gradient-to-r from-violet-500/0 from-10% via-violet-400 to-violet-500/0 to-90% transition duration-300 -bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100">
+      </span>
+      <span class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100">
+        <span class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-violet-500/20 to-transparent blur rounded-t-full">
+        </span>
+      </span>
+    </a>
+    <a class="flex-none group relative block transition duration-300 px-3 py-2.5 hover:text-violet-600" href="file:///D:/CodeX/Abroad%20Campus/Contact%20Us%20Page%20(Landing%20Page%20Redirecting)/index.html">Contact Us
+      <span class="absolute inset-x-1 h-px bg-gradient-to-r from-violet-500/0 from-10% via-violet-400 to-violet-500/0 to-90% transition duration-300 -bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100">
+      </span>
+      <span class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100">
+        <span class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-violet-500/20 to-transparent blur rounded-t-full">
+        </span>
+      </span>
+    </a>
+    <a class="flex-none group relative block transition duration-300 px-3 py-2.5 hover:text-violet-600" href="https://filetransfer.io/data-package/gJ0ePoRz#link"> Plan
+      <span class="absolute inset-x-1 h-px bg-gradient-to-r from-violet-500/0 from-10% via-violet-400 to-violet-500/0 to-90% transition duration-300 -bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100">
+      </span>
+      <span class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100">
+        <span class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-violet-500/20 to-transparent blur rounded-t-full">
+        </span>
+      </span>
+    </a>
+  </div>
+  <div class="ml-5 flex-none flex items-center rounded-full bg-white/75 bg-gradient-to-r from-pink-200/40 via-violet-200/40 to-indigo-200/40 border border-white/50 px-3 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-800/[.075] backdrop-blur-xl">
+
+      <a href="file:///E:/The%20Abroad%20Campus/sign%20in%20page.html" class="flex-none group relative text-base sm:text-sm -ml-2 my-1 inline-flex items-center bg-clip-padding rounded-l-[20px] rounded-r-[8px] border h-8 pl-3 pr-[10px] bg-white/40 border-white/90 shadow hover:text-violet-600 hover:bg-violet-50/40 transition-colors duration-300">
+        Sign In
+        <span class="absolute left-4 right-1 -bottom-2px h-px bg-gradient-to-r from-violet-500/0 via-violet-400 to-violet-500/0 transition duration-300 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100">
+        </span>
+        <span class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100">
+          <span class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-violet-500/20 to-transparent blur rounded-t-full">
+          </span>
+        </span>
+      </a>
+
+      <a href="file:///E:/The%20Abroad%20Campus/sign%20up%20page.html" class="flex-none group relative text-base sm:text-sm ml-5px -mr-2 my-1 h-8 pr-3 btn-xs btn-purple btn-border-dark border-none rounded-r-[20px] rounded-l-[8px] ">
+        Get Started
+      </a>
+
+  </div>
+</nav>
+
+<div class="xl:hidden opacity-0 z-[-1] pointer-events-none [[data-menu-state=on]_&amp;]:pointer-events-auto [[data-menu-state=on]_&amp;]:opacity-100 [[data-menu-state=on]_&amp;]:z-40 transition-all duration-500 fixed inset-0 bg-gray-500/25 backdrop-blur-sm">
+</div>
+<nav data-menu="" aria-label="Main menu" class="xl:hidden [[data-menu-state=on]_&amp;]:translate-x-0 -translate-x-full transition duration-300 ease-in-out text-sm w-full overflow-hidden sm:max-w-sm md:max-w-[25rem] fixed left-0 top-0 bottom-0 z-50 border-t border-t-gray-200 bg-clip-padding pl-[calc(50vw-240px)] sm:pl-[calc(50vw-320px+1.5rem)] md:pl-[calc(50vw-384px+1.5rem)] lg:pl-[calc(50vw-504px+1.5rem)] xl:pl-[calc(50vw-592px+1.5rem)] pr-6 pt-24 bg-white shadow-[1px_0_rgba(86,75,128,0.1)]">
+  <a href="/" aria-hidden="true" class="absolute [[data-menu-state=on]_&amp;]:translate-x-0 translate-x-[100vw] sm:translate-x-[24rem] md:translate-x-[25rem] transition duration-300 ease-in-out top-[29px] pl-4 sm:pl-0">
+    
+<svg aria-labelledby="title-GBEb_n6yBJ-GIU_Cdescription-GBEb_n6yD-mGIU_S" class="" role="img" style="pointer-events: none; width: auto; height: 36px;" aria-hidden="true" viewBox="0 0 259 84" fill-rule="evenodd">
+<title id="title-GBEb_n6yL2-GIU_i">
+  
+    
+  
+</title>
+<desc id="description-GBEb_n6yOZeGIU_y">
+  
+    
+  
+</desc>
+
+<g buffered-rendering="static">
+
+    <path d="M57.413 10.134h9.454c8.409 0 15.236 6.827 15.236 15.236v33.243c0 8.409-6.827 15.236-15.236 15.236h-.745c-4.328-.677-6.205-1.975-7.655-3.072l-12.02-9.883a1.692 1.692 0 0 0-2.128 0l-3.905 3.211-10.998-9.043a1.688 1.688 0 0 0-2.127 0L12.01 68.503c-3.075 2.501-5.109 2.039-6.428 1.894C2.175 67.601 0 63.359 0 58.613V25.37c0-8.409 6.827-15.236 15.237-15.236h9.433l-.017.038-.318.927-.099.318-.428 1.899-.059.333-.188 1.902-.025.522-.004.183.018.872.043.511.106.8.135.72.16.663.208.718.54 1.52.178.456.94 1.986.332.61 1.087 1.866.416.673 1.517 2.234.219.296 1.974 2.569.638.791 2.254 2.635.463.507 1.858 1.999.736.762 1.216 1.208-.244.204-.152.137c-.413.385-.805.794-1.172 1.224a10.42 10.42 0 0 0-.504.644 8.319 8.319 0 0 0-.651 1.064 6.234 6.234 0 0 0-.261.591 5.47 5.47 0 0 0-.353 1.606l-.007.475a5.64 5.64 0 0 0 .403 1.953 5.44 5.44 0 0 0 1.086 1.703c.338.36.723.674 1.145.932.359.22.742.401 1.14.539a6.39 6.39 0 0 0 2.692.306h.005a6.072 6.072 0 0 0 2.22-.659c.298-.158.582-.341.848-.549a5.438 5.438 0 0 0 1.71-2.274c.28-.699.417-1.446.405-2.198l-.022-.393a5.535 5.535 0 0 0-.368-1.513 6.284 6.284 0 0 0-.285-.618 8.49 8.49 0 0 0-.67-1.061 11.022 11.022 0 0 0-.354-.453 14.594 14.594 0 0 0-1.308-1.37l-.329-.28.557-.55 2.394-2.5.828-.909 1.287-1.448.837-.979 1.194-1.454.808-1.016 1.187-1.587.599-.821.85-1.271.708-1.083 1.334-2.323.763-1.524.022-.047.584-1.414a.531.531 0 0 0 .02-.056l.629-1.962.066-.286.273-1.562.053-.423.016-.259.019-.978-.005-.182-.05-.876-.062-.68-.31-1.961c-.005-.026-.01-.052-.018-.078l-.398-1.45-.137-.403-.179-.446Zm4.494 41.455a3.662 3.662 0 0 0-3.61 3.61 3.663 3.663 0 0 0 3.61 3.609 3.665 3.665 0 0 0 3.611-3.609 3.663 3.663 0 0 0-3.611-3.61Z" fill="url(#3zh_Radial1)"></path>
+
+  <path d="M35.639 72.544l-.637.535a3.332 3.332 0 01-2.09.762H15.235a15.176 15.176 0 01-9.654-3.451c1.319.145 3.353.607 6.428-1.894l15.277-13.44a1.693 1.693 0 012.127 0l10.997 9.042 3.904-3.21c.619-.5 1.51-.5 2.128 0l12.019 9.882c1.45 1.097 3.327 2.394 7.654 3.071H58.12a3.394 3.394 0 01-1.963-.654l-.14-.108-.593-.493a1.247 1.247 0 00-.158-.159c-.672-.563-9.187-7.617-9.187-7.617a1 1 0 00-1.281.002s.021.026-9.038 7.615a1.12 1.12 0 00-.121.117zm26.262-20.96a3.678 3.678 0 00-3.61 3.609 3.68 3.68 0 003.61 3.609 3.68 3.68 0 003.61-3.609 3.678 3.678 0 00-3.61-3.609zM38.566 40.648L37.35 39.44l-.736-.762-1.858-1.999-.463-.507-2.253-2.634-.638-.791-1.974-2.569-.219-.296-1.517-2.234-.416-.673-1.087-1.866-.332-.61-.94-1.985-.178-.456-.539-1.52-.208-.718-.16-.663-.135-.72-.106-.8-.043-.511-.018-.872.004-.183.025-.522.188-1.901.059-.333.428-1.899.098-.318.318-.927.102-.24.506-1.112.351-.662.489-.806.487-.718.347-.456.4-.482.44-.484.377-.378.918-.808.671-.549c.016-.014.033-.026.05-.038l.794-.537.631-.402 1.198-.631c.018-.011.039-.02.058-.029l1.698-.705.157-.059 1.51-.442.638-.143.862-.173.572-.087.877-.109.598-.053 1.187-.063.465-.005.881.018.229.013 1.276.106 1.687.238.195.041 1.668.415.49.146.544.188.663.251.524.222.77.363.485.249.872.512.325.2 1.189.868.341.296.828.754.041.041.703.754.242.273.825 1.096.168.262.655 1.106.197.379.369.825.386.963.137.403.398 1.45a.89.89 0 01.018.078l.31 1.961.062.679.05.876.005.182-.019.978-.016.259-.053.423-.273 1.562-.066.286-.629 1.962a.626.626 0 01-.02.056l-.584 1.414-.022.047-.763 1.523-1.334 2.323-.708 1.083-.849 1.271-.599.821-1.187 1.587-.808 1.016-1.194 1.453-.837.979-1.287 1.448-.828.909-2.394 2.5-.556.55.328.28c.465.428.902.885 1.308 1.37.122.148.24.299.354.453.249.336.473.691.67 1.06.106.2.201.407.285.618.191.484.32.996.368 1.513l.022.393c.012.752-.125 1.5-.405 2.198a5.438 5.438 0 01-1.71 2.274c-.266.208-.55.391-.848.549a6.08 6.08 0 01-2.219.659h-.005a6.403 6.403 0 01-2.692-.306 5.882 5.882 0 01-1.14-.539 5.523 5.523 0 01-1.145-.932 5.458 5.458 0 01-1.086-1.703 5.662 5.662 0 01-.403-1.953l.007-.475a5.47 5.47 0 01.353-1.606c.077-.202.164-.399.261-.591.19-.37.408-.725.651-1.063.159-.221.328-.436.504-.644.367-.43.759-.839 1.172-1.224l.152-.137.244-.204z" class="fill-navy"></path>
+  <path d="M35.002 73.079l9.796-8.267a1 1 0 011.281-.002l9.938 8.269c.604.492 1.36.761 2.139.762h-25.28c.776 0 1.527-.269 2.126-.762zM41.1 43.568l.096.028c.031.015.057.036.085.055l.08.071c.198.182.39.373.575.569.13.139.257.282.379.43.155.187.3.383.432.587.057.09.11.181.16.276.043.082.082.167.116.253.06.15.105.308.119.469l-.003.302a1.726 1.726 0 01-.817 1.343 2.333 2.333 0 01-.994.327l-.373.011-.315-.028a2.398 2.398 0 01-.433-.105 2.07 2.07 0 01-.41-.192l-.246-.18a1.685 1.685 0 01-.56-.96 2.418 2.418 0 01-.029-.19l-.009-.288c.005-.078.017-.155.034-.232.043-.168.105-.331.183-.486.101-.194.216-.381.344-.559.213-.288.444-.562.691-.821.159-.168.322-.331.492-.488l.121-.109c.084-.055.085-.055.181-.083h.101zM40.481 3.42l.039-.003v33.665l-.084-.155a94.101 94.101 0 01-3.093-6.267 67.257 67.257 0 01-2.099-5.255 41.665 41.665 0 01-1.265-4.326c-.265-1.163-.469-2.343-.553-3.535a16.923 16.923 0 01-.029-1.528c.008-.444.026-.887.054-1.33.044-.696.115-1.391.217-2.081.081-.543.181-1.084.304-1.619.098-.425.212-.847.342-1.262.188-.6.413-1.186.675-1.758.096-.206.199-.411.307-.612.65-1.204 1.532-2.313 2.687-3.054a5.609 5.609 0 012.498-.88zm4.365.085l2.265.646c1.049.387 2.059.891 2.987 1.521a11.984 11.984 0 013.212 3.204c.502.748.918 1.555 1.243 2.398.471 1.247.763 2.554.866 3.882.03.348.047.697.054 1.046.008.324.006.649-.02.973-.064.725-.2 1.442-.407 2.14a17.03 17.03 0 01-.587 1.684c-.28.685-.591 1.357-.932 2.013-.754 1.457-1.623 2.852-2.553 4.201a65.451 65.451 0 01-3.683 4.806 91.02 91.02 0 01-4.417 4.896 93.66 93.66 0 002.907-5.949c.5-1.124.971-2.26 1.414-3.407.487-1.26.927-2.537 1.317-3.83.29-.969.546-1.948.757-2.938.181-.849.323-1.707.411-2.57.074-.72.101-1.444.083-2.166a30.867 30.867 0 00-.049-1.325c-.106-1.775-.376-3.545-.894-5.248a15.341 15.341 0 00-.714-1.892c-.663-1.444-1.588-2.793-2.84-3.778l-.42-.307z" fill="white"></path>
+
+    <path d="M179.213 64.297l-10.751-23.015c-.898-1.917-1.433-2.618-2.331-3.431l-.874-.788c-.697-.676-1.155-1.302-1.155-2.045 0-1.064.843-1.96 2.378-1.96h9.334c1.465 0 2.378.762 2.378 1.9 0 .635-.292 1.111-.661 1.578-.438.555-1.008 1.096-1.008 2.082 0 .618.18 1.234.527 2.021l6.416 15.025 5.755-14.647c.354-.974.596-1.832.596-2.519 0-1.069-.581-1.505-1.029-1.983-.39-.415-.702-.854-.702-1.557 0-1.149.935-1.9 2.193-1.9h5.748c1.612 0 2.378.834 2.378 1.9 0 .682-.393 1.314-1.166 1.996l-.813.668c-1.132.925-1.656 2.263-2.251 3.647l-8.716 20.998c-1.03 2.455-2.563 5.863-4.905 8.659-2.379 2.84-5.587 5.048-9.932 5.048-3.638 0-5.84-1.737-5.84-4.24 0-2.293 1.696-4.12 3.924-4.12 1.22 0 1.855.576 2.499 1.169.532.489 1.072.991 2.137.991.988 0 1.908-.418 2.742-1.093 1.274-1.03 2.341-2.652 3.129-4.384zm63.175-.082c4.839 0 8.804-1.658 11.897-4.967 3.09-3.304 4.636-7.281 4.636-11.931 0-4.539-1.469-8.268-4.396-11.191-2.926-2.921-6.723-4.388-11.396-4.388-4.92 0-8.944 1.597-12.077 4.78-3.135 3.186-4.703 7.045-4.703 11.578 0 4.493 1.496 8.301 4.483 11.425 2.99 3.126 6.84 4.694 11.556 4.694zm-40.921-.36c2.798 0 4.788-1.884 4.788-4.6 0-2.652-2.055-4.54-4.788-4.54-2.863 0-4.912 1.891-4.912 4.54 0 2.713 2.05 4.6 4.912 4.6zm9.964-4.305l.681-.72c.81-.787 1.071-1.582 1.071-3.774V42.097c0-1.895-.258-2.741-1.062-3.465l-.801-.718c-.785-.693-1.043-1.124-1.043-1.816 0-.984.763-1.791 1.99-2.071l5.44-1.32c.52-.126 1.107-.249 1.562-.249.626 0 1.138.206 1.497.563.36.358.572.873.572 1.517v20.518c0 2.069.251 3.031 1.115 3.758a.359.359 0 01.039.039l.608.708c.764.743 1.081 1.236 1.081 1.914 0 1.209-.912 1.9-2.377 1.9h-9.211c-1.396 0-2.316-.687-2.316-1.9 0-.681.317-1.178 1.154-1.925zm-61.567.001l.681-.721c.811-.787 1.071-1.582 1.071-3.774V27.999c0-1.835-.194-2.736-1.053-3.459l-.822-.796c-.709-.689-.968-1.116-.968-1.805 0-.985.767-1.789 1.927-2.07l5.378-1.32c.521-.126 1.107-.249 1.563-.249.621 0 1.147.187 1.522.542.376.356.608.885.608 1.598v34.616c0 2.074.258 2.981 1.125 3.766l.694.734c.769.748 1.025 1.238 1.025 1.919 0 .502-.153.907-.426 1.216-.385.435-1.03.684-1.89.684h-9.21c-.86 0-1.505-.249-1.891-.684-.272-.309-.425-.714-.425-1.216 0-.682.253-1.176 1.091-1.924zm-25.079-13.934v9.319c0 1.404.278 2.701 1.435 3.768l.748.726c.838.813 1.093 1.3 1.093 2.045 0 1.138-.913 1.9-2.378 1.9h-10.385c-1.465 0-2.377-.762-2.377-1.9 0-.884.259-1.303 1.097-2.049l.745-.724c.868-.786 1.434-1.857 1.434-3.766V30.039c0-1.517-.336-2.758-1.435-3.769l-.749-.726c-.77-.747-1.092-1.238-1.092-1.985 0-1.206.915-1.96 2.377-1.96h27.817c1.063 0 1.997.237 2.594.822.415.407.68.981.71 1.778l.433 6.421c.043.803-.194 1.472-.657 1.885-.319.284-.748.454-1.288.454-.681 0-1.203-.257-1.669-.701-.419-.399-.792-.959-1.213-1.618-1.016-1.624-1.489-2.208-2.572-2.967-1.507-1.112-3.803-1.494-8.145-1.494-2.505 0-4.086.109-5.082.366-.644.166-1.016.382-1.215.699-.204.324-.226.734-.226 1.235v12.618h6.523c1.561 0 2.659-.282 3.931-2.021l.007-.01c.51-.649.879-1.127 1.23-1.444.409-.37.802-.545 1.323-.545a1.9 1.9 0 011.883 1.901v8.699c0 1.165-.908 1.96-1.883 1.96-.485 0-.879-.173-1.289-.535-.353-.31-.723-.775-1.203-1.396-1.392-1.802-2.375-2.089-3.999-2.089h-6.523zm110.214-.22c0-3.121.68-5.364 2.089-6.713 1.392-1.332 2.888-2.006 4.496-2.006 2.212 0 4.205 1.238 6.003 3.672 1.837 2.489 2.746 5.853 2.746 10.086 0 3.124-.682 5.388-2.093 6.776-1.391 1.369-2.886 2.063-4.493 2.063-2.212 0-4.204-1.248-6.002-3.701-1.838-2.51-2.746-5.904-2.746-10.177zm-18.202-16.878c2.804 0 4.788-1.578 4.788-4.3 0-2.658-1.982-4.24-4.788-4.24-2.871 0-4.851 1.583-4.851 4.24 0 2.656 1.981 4.3 4.851 4.3z" class="fill-navy"></path>
+
+</g>
+<defs>
+  <radialGradient id="3zh_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(43.593 41.714) scale(59.4764)">
+    <stop offset="0" stop-color="#ba7bf0"></stop>
+    <stop offset=".45" stop-color="#996bec"></stop>
+    <stop offset="1" stop-color="#5046e4"></stop>
+  </radialGradient>
+</defs>
+</svg>
+  </a>
+
+  <!-- Header Menu URL -->
+  <div class="max-h-full overflow-y-auto scrollbar-hidden grid justify-start pb-6 pl-4 sm:pl-0">
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20SAT/index.html">SAT</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20ACT/index.html">ACT</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20TOEFL/index.html">TOEFL</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20IELTS/index.html">IELTS</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20GMAT/index.html">GMAT</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20GRE/index.html">GRE</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/universities.html/universities.html">Universities</a>
+    
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="#">Docs</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="file:///E:/The%20Abroad%20Campus/About%20Us.html">About Us</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="#">Contact Us</a>
+    <a class="flex items-center mr-auto text-sm py-1.5 transition-colors text-navy-950 hover:text-violet-600" href="https://filetransfer.io/data-package/gJ0ePoRz#link">Plan</a>
+    <!-- Header Sign In -->
+      <a href="file:///E:/The%20Abroad%20Campus/sign%20in%20page.html" class="lg:hidden button mt-8 max-w-52 border border-gray-300 shadow-sm text-violet-600 hover:border-violet-500/40 hover:bg-violet-200 hover:text-violet-600 hover:text-shadow-none hover:shadow-none transition-all">
+        Sign In
+      </a>
+      <a href="file:///E:/The%20Abroad%20Campus/sign%20up%20page.html" class="lg:hidden button mt-3 max-w-52 bg-violet-600 hover:bg-violet-600 text-white transition-all">
+        Get Started
+      </a>
+
+  </div>
+</nav>
+</header>
+
+<div class="relative w-full h-full overflow-hidden -mt-24 pt-24">
+<div class="absolute inset-0 bg-gray-100 bg-gradient-to-b from-gray-100 via-white to-white"></div>
+<svg class="pointer-events-none absolute left-1/2 -translate-x-1/2 top-0 w-full min-w-[80rem] h-auto" width="1171" height="241" viewBox="0 0 1171 241" fill="none">
+<g opacity=".175" filter="url(#filter0_f)">
+  <path d="M731.735 -179.55C596.571 -157.762 516.36 -74.1815 552.576 7.13199C588.793 88.4455 727.724 136.701 862.887 114.913C998.051 93.1247 1078.26 9.54454 1042.05 -71.769C1005.83 -153.082 866.898 -201.337 731.735 -179.55Z" fill="url(#paint0_linear)"></path>
+  <path d="M378 114.106C520.489 114.106 636 45.8883 636 -38.2623C636 -122.413 520.489 -190.63 378 -190.63C235.511 -190.63 120 -122.413 120 -38.2623C120 45.8883 235.511 114.106 378 114.106Z" fill="url(#paint1_linear)"></path>
+</g>
+<defs>
+  <filter id="filter0_f" x="0" y="-310.63" width="1170.74" height="550.775" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+    <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur"></feGaussianBlur>
+  </filter>
+  <linearGradient id="paint0_linear" x1="567.5" y1="1.03997" x2="1029.02" y2="64.6468" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#001AFF"></stop>
+    <stop offset="1" stop-color="#6EE5C2"></stop>
+  </linearGradient>
+  <linearGradient id="paint1_linear" x1="155" y1="-11.0234" x2="511.855" y2="-162.127" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FFC83A"></stop>
+    <stop offset="0.504191" stop-color="#FF008A"></stop>
+    <stop offset="1" stop-color="#6100FF"></stop>
+  </linearGradient>
+</defs>
+</svg>
+<main>
+<header class="hero relative flex flex-col pt-[70px] -mt-24 h-[800px] pb-[200px] lg:h-[1000px] lg:pb-[268px] 3xl:pb-[15.5vw]">
+  <div class="absolute left-1/2 bottom-0 3xl:inset-0 -translate-x-1/2 3xl:translate-x-0" aria-hidden="true">
+    <img width="1440" src="images/cloud-city-a61199fec62cd744415fcdf4e1be8434.png" class="w-[1200px] lg:w-[1750px] 3xl:w-full max-w-screen-3xl 3xl:max-w-full h-auto 3xl:h-full 3xl:object-contain 3xl:object-bottom">
+  </div>
+  <div class="relative container lg:max-w-3xl m-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative flex flex-col items-start sm:items-center sm:text-center">
+      <h1 class="font-heading text-3.5xl xs:text-4.5xl sm:text-5xl md:text-5.5xl lg:text-6xl xl:text-6.5xl !tracking-[-.045em] relative text-navy mb-4 -mt-4 sm:-mt-5 lg:-mt-6 xl:mt-[-26px]">
+        "Your gateway to dreams <br class="hidden lg:block"> achieving through world-class
+        <em class="relative inline-block z-0">
+          Education Abroad."
+          <svg viewBox="0 0 1213 73" aria-hidden="true" preserveAspectRatio="none" height="12" class="absolute -bottom-0.5 sm:bottom-0 md:bottom-[3px] left-0 w-full h-3 text-purple-400 -z-1">
+            <g buffered-rendering="static">
+              <path fill="url(#underline-gradient)" d="M1213.19 35.377c2.37-13.011-22.95-10.753-31.04-14.087C1086.89 5.705 911.742 2.887 815.218 2.809c-78.003.231-155.966-1.833-233.961.481-57.545.429-114.885 6.164-172.419 7.383-121.164 5.39-242.94 10.751-362.507 32.199-12.356 3.286-25.614 4.255-37.332 9.401-29.507 22.983 27.103 20.15 39.468 17.234 357.956-47.703 362.767-46.261 636.452-50.97 121.033-2.508 241.892 6.658 428.341 19.243 4.74.404 8.98-4.032 8-8.788a942.105 942.105 0 0154.69 6.378c9.44 1.843 18.92 3.583 28.29 5.729 4.01.839 8.02-1.718 8.95-5.712v-.01z"></path>
+            </g>
+            <defs>
+              <linearGradient id="underline-gradient" gradientTransform="rotate(110)">
+                <stop offset="5%" stop-color="#CA7FF8"></stop>
+                <stop offset="95%" stop-color="#795BE9"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </em>
+      </h1>
+      <p class="text-base lg:text-lg tracking-prose mb-9 max-w-lg lg:max-w-2xl mx-auto">
+        <strong class="text-navy">The Abroad Campus</strong>
+        is your trusted ally in transforming dreams into reality. With expert guidance, tailored test prep, and a wealth of resources, we help students unlock global education opportunities and thrive on their study abroad journey. Your future, our mission!
+      </p>
+
+      <a href="file:///E:/The%20Abroad%20Campus/sign%20up%20page.html" class="gap-2 btn-xl btn-purple group/btn btn-border-dark rounded-full">
+
+  
+        Start Your Journey!!
+      
+
+
+<div class="flex items-center opacity-50 group-hover/btn:opacity-100 transition-opacity ">
+  <svg role="img" viewBox="0 0 16 16" width="0" height="10" fill="currentColor" class="w-0 group-hover/btn:w-2.5 h-3 translate-x-2.5 ease-out duration-200 transition-all transform-gpu">
+    <path d="M1 9h14a1 1 0 000-2H1a1 1 0 000 2z"></path>
+  </svg>
+  <svg role="img" viewBox="0 0 16 16" width="10" height="10" fill="currentColor" class="size-[0.7em]">
+    <path d="M7.293 1.707L13.586 8l-6.293 6.293a1 1 0 001.414 1.414l7-7a.999.999 0 000-1.414l-7-7a1 1 0 00-1.414 1.414z"></path>
+  </svg>
+</div>
+
+</a>
+
+
+
+    </div>
+  </div>
+</header>
+
+<!-- Web Section 2 -->
+<section class="relative bg-white overflow-hidden">
+  <div class="rotate-3 absolute -inset-x-12 -top-6 h-12 bg-gradient-to-r from-sky-300 via-indigo-300 to-pink-300 blur-3xl">
+  </div>
+  <div class="absolute inset-0 bg-gradient-[100deg] from-sky-300/10 via-indigo-300/10 to-pink-300/10 [-webkit-mask-image:linear-gradient(to_bottom,rgba(255,255,255,1)_75%,rgba(255,255,255,0))]">
+  </div>
+  <div class="relative container mx-auto py-24 xl:py-32 px-4 sm:px-6 lg:px-8 grid gap-20 items-center">
+    <div class="lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-start">
+      <div class="relative lg:max-w-xl space-y-4 lg:pb-20">
+        <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-navy">
+          Why To Choose Us?
+        </h2>
+        <p class="text-lg">
+          Choose us for an AI-powered, all-in-one platform that simplifies your study abroad journey. From personalized guidance on academics, finances, and applications to mentorship, scholarships, and multilingual support, we make international education accessible and affordable—especially for first-generation students. Your success, simplified.
+        </p>
+        <div class="hidden lg:block w-full h-px absolute bottom-0 bg-gradient-to-r from-navy-400 via-navy-400/[0.35] via-10% to-transparent">
+          <svg viewBox="0 0 6 3" width="6" height="3" class="-mt-px fill-navy-400">
+            <path d="M2.594 2.525A1.501 1.501 0 112.635.519c.274.295.665.479 1.098.479H6v1.004H3.733a1.5 1.5 0 00-1.108.489l-.017.02-.013.015-.001-.001z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <img width="400" src="images/fly-globe-cb332f77ddb429aa3ef4e0a2c6c592ba.png" class="w-full max-w-sm -mb-12 mx-auto relative lg:-mt-4" alt="">
+    </div>
+    <ul class="grid lg:grid-cols-2 gap-y-16 gap-x-8 xl:gap-x-16">
+      <li class="group w-full relative grid grid-cols-auto-span items-start gap-8 text-left">
+        <div class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-emerald-500/30 from-green-300/50 to-emerald-300/50 text-emerald-500 ring-emerald-500/35">
+
+<svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20" fill="currentColor">
+<g buffered-rendering="static">
+
+    <path d="M12.572 18.624a9.035 9.035 0 005.735-5.139h-3.92c-.32 2.065-.93 3.912-1.815 5.139zm6.119-10.947h-4.163c.076.762.12 1.543.12 2.323s-.044 1.561-.12 2.323h4.16c.205-.757.31-1.538.312-2.323 0-.806-.113-1.579-.309-2.323zm-.388-1.162a9.025 9.025 0 00-5.735-5.139c.886 1.227 1.496 3.074 1.815 5.139h3.92z" fill-opacity=".7" fill-rule="nonzero"></path>
+    <path d="M6.789 13.485c.527 3.241 1.768 5.517 3.213 5.517 1.444 0 2.686-2.276 3.212-5.517H6.789zM6.517 10c0 .806.044 1.579.12 2.323h6.726c.076-.744.12-1.517.12-2.323s-.044-1.579-.12-2.323H6.637c-.076.744-.12 1.517-.12 2.323zm6.697-3.485C12.688 3.274 11.446.998 10.002.998c-1.445 0-2.686 2.276-3.213 5.517h6.425z" fill-opacity=".5" fill-rule="nonzero"></path>
+    <path d="M1.701 13.485a9.022 9.022 0 005.735 5.139c-.886-1.227-1.496-3.074-1.815-5.139h-3.92zM5.356 10c0-.78.043-1.561.119-2.323H1.312A9.067 9.067 0 001 10c0 .806.116 1.579.312 2.323h4.16L5.356 10zm2.076-8.624a9.016 9.016 0 00-5.731 5.139h3.92c.315-2.065.925-3.912 1.811-5.139z" fill-opacity=".3" fill-rule="nonzero"></path>
+    <path d="M6.789 13.485c.527 3.241 1.768 5.517 3.213 5.517 1.444 0 2.686-2.276 3.212-5.517H6.789zm5.783 5.139a9.035 9.035 0 005.735-5.139h-3.92c-.32 2.065-.93 3.912-1.815 5.139zM1.701 13.485a9.022 9.022 0 005.735 5.139c-.886-1.227-1.496-3.074-1.815-5.139h-3.92zm5.686.5h5.23c-.312 1.586-.802 2.889-1.413 3.71-.367.492-.76.807-1.202.807-.442 0-.835-.315-1.202-.807-.612-.821-1.102-2.124-1.413-3.71zm6.326 3.66c.488-1.041.857-2.297 1.098-3.66h2.704a8.536 8.536 0 01-3.803 3.661l.001-.001zm-11.221-3.66h2.705c.24 1.363.609 2.62 1.098 3.66a8.518 8.518 0 01-3.803-3.66zm16.199-6.308h-4.163c.076.762.12 1.543.12 2.323s-.044 1.561-.12 2.323h4.16c.205-.757.31-1.538.312-2.323 0-.806-.113-1.579-.309-2.323zM5.356 10c0-.78.043-1.561.119-2.323H1.312A9.067 9.067 0 001 10c0 .806.116 1.579.312 2.323h4.16L5.356 10zm1.161 0c0 .806.044 1.579.12 2.323h6.726c.076-.744.12-1.517.12-2.323s-.044-1.579-.12-2.323H6.637c-.076.744-.12 1.517-.12 2.323zm-1.661 0l.09 1.823H1.705a8.408 8.408 0 01-.205-1.822 8.605 8.605 0 01.204-1.824h3.225A23.475 23.475 0 004.856 10zm2.161 0c0-.627.027-1.234.076-1.823h5.814a21.961 21.961 0 010 3.646H7.093A21.961 21.961 0 017.017 10zm11.281-1.823a8.47 8.47 0 01.202 1.822 8.469 8.469 0 01-.203 1.824h-3.223a22.99 22.99 0 00.001-3.646h3.223zM7.432 1.376a9.016 9.016 0 00-5.731 5.139h3.92c.315-2.065.925-3.912 1.811-5.139zm5.782 5.139C12.688 3.274 11.446.998 10.002.998c-1.445 0-2.686 2.276-3.213 5.517h6.425zm5.089 0a9.025 9.025 0 00-5.735-5.139c.886 1.227 1.496 3.074 1.815 5.139h3.92zm-.791-.5h-2.705c-.24-1.363-.609-2.619-1.098-3.66a8.518 8.518 0 013.803 3.66zM6.291 2.355c-.488 1.041-.857 2.297-1.095 3.66H2.492a8.514 8.514 0 013.8-3.661l-.001.001zm6.326 3.66h-5.23c.311-1.586.801-2.889 1.413-3.71.367-.492.76-.807 1.202-.807.442 0 .835.315 1.202.807.611.821 1.101 2.124 1.413 3.71z"></path>
+
+</g>
+</svg>
+</div>
+<!-- Web Section 3 -->
+<div>
+  <h2 class="font-heading text-lg md:text-1.5xl text-navy">
+    Get Started Today
+  </h2>
+  <p class="mt-4 text-base">
+    Register on our platform, create your personalized profile, and let us understand your academic background, financial needs, and aspirations.
+  </p>
+</div>
+</li>
+<li class="group w-full relative grid grid-cols-auto-span items-start gap-8 text-left">
+<div class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-blue-500/30 from-sky-300/50 to-blue-300/50 text-blue-500 ring-blue-500/30">
+
+<svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20" fill="currentColor" fill-rule="evenodd">
+<g buffered-rendering="static">
+
+<path d="M10.004 14.458a2.273 2.273 0 012.271 2.271 2.273 2.273 0 01-4.543 0 2.273 2.273 0 012.272-2.271zM5.023 1a2.273 2.273 0 012.271 2.271A2.272 2.272 0 115.023 1zm9.954 0a2.272 2.272 0 010 4.542 2.273 2.273 0 01-2.271-2.271A2.273 2.273 0 0114.977 1z" fill-opacity=".7"></path>
+<path d="M6.138 5.249v2.61c0 .601.494 1.094 1.094 1.094h5.545a1.1 1.1 0 001.094-1.094V5.254a2.25 2.25 0 001.106.288 2.26 2.26 0 001.062-.263v2.58a3.28 3.28 0 01-3.262 3.263h-1.689v3.612a2.263 2.263 0 00-2.168-.001v-3.611H7.232a3.28 3.28 0 01-3.263-3.263V5.283a2.267 2.267 0 002.169-.034z" fill-opacity=".3" fill-rule="nonzero"></path>
+<path d="M13.871 5.254A2.27 2.27 0 0114.977 1a2.272 2.272 0 011.062 4.279v2.58a3.28 3.28 0 01-3.262 3.263h-1.689v3.612A2.27 2.27 0 0110.004 19a2.273 2.273 0 01-2.272-2.271c0-.861.481-1.611 1.188-1.996v-3.611H7.232a3.28 3.28 0 01-3.263-3.263V5.283A2.273 2.273 0 015.023 1a2.27 2.27 0 011.115 4.249v2.61c0 .601.494 1.094 1.094 1.094h5.545a1.1 1.1 0 001.094-1.094V5.254zm.5 2.606V4.961l-.256-.143a1.772 1.772 0 01.862-3.318 1.772 1.772 0 01.828 3.337l-.266.141v2.881a2.778 2.778 0 01-2.762 2.763h-2.189v4.409l.261.142a1.772 1.772 0 11-1.69-.001l.261-.142v-4.408H7.232a2.777 2.777 0 01-2.763-2.763V4.981l-.267-.14A1.773 1.773 0 015.023 1.5a1.772 1.772 0 01.869 3.314l-.254.144v2.901c0 .875.72 1.594 1.594 1.594h5.545c.874 0 1.593-.719 1.594-1.593z"></path>
+
+</g>
+</svg>
+</div>
+<div>
+  <h2 class="font-heading text-lg md:text-1.5xl text-navy">
+    Prepare Smarter
+  </h2>
+  <p class="mt-4 text-base">
+    Access customized resources for test preparation, scholarship opportunities, and academic planning tailored just for you.
+  </p>
+</div>
+</li>
+<li class="group w-full relative grid grid-cols-auto-span items-start gap-8 text-left">
+<div class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-orange-500/30 from-orange-200/50 to-orange-500/40 text-orange-500 ring-orange-500/35">
+
+<svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20" fill="currentColor" fill-rule="evenodd">
+<g buffered-rendering="static">
+
+<path d="M15.534 6.708h-4.945l1.569-4.188c.047-.126.071-.259.071-.393 0-.617-.508-1.126-1.125-1.127H5.429c-.568 0-1.047.423-1.116.987L3.35 9.8l-.001.003v.005l-.001.002v.007l-.001.002v.008l-.001.002v.009l-.001.007v.004l-.001.003v.006l-.001.018v.006l-.001.008v.005l-.001.019v.048l.001.002v.028l.001.002v.011l.001.017.001.002v.008c.01.117.038.232.085.342l.001.005.008.018.002.002.001.003v.002l.001.002.002.002.003.007.003.008.005.01.027.051.002.004.003.005.009.016.001.001v.001l.002.002.002.003.001.002v.001l.001.001.003.005.001.001.001.003.003.003v.001l.001.001.002.003v.002l.001.001.002.003.001.002.001.001c.061.095.136.18.221.251l.004.003.007.007.007.006.004.002.001.002h.001l.002.001.005.005.002.001.002.002.006.004a.018.018 0 00.007.005v.001l.002.001.003.002.002.002h.001l.003.003.005.003.014.011.005.003.004.003.023.015.008.006.016.009.005.003.011.007.016.009.001.001h.001l.006.004.001.001h.001l.001.001.006.003a.02.02 0 00.008.004l.002.002.004.001.001.001.004.002.001.001.003.001.008.004.003.002.008.004.003.002h.002l.001.001.003.001.002.001.001.001c.125.06.262.098.404.108h.002l.004.001h.01l.009.001h.017l.003.001h4.996l-1.597 6.546a1.128 1.128 0 001.088 1.4c.381 0 .737-.194.944-.514l6.615-10.042c.121-.184.185-.398.185-.618 0-.617-.507-1.125-1.124-1.126z" fill-opacity=".5" fill-rule="nonzero"></path>
+<path d="M3.518 10.543l-.002-.003-.001-.003-.006-.008-.001-.003-.006-.01-.002-.003-.002-.002-.053-.103-.003-.004v-.002l-.001-.003-.002-.002-.008-.018-.001-.005a1.108 1.108 0 01-.085-.342v-.008l-.001-.002-.001-.028-.001-.002v-.028l-.001-.002.003-.11.001-.003v-.004l.001-.007v-.009l.001-.002v-.008l.001-.002V9.81l.001-.002v-.005L3.35 9.8l.963-7.813A1.124 1.124 0 015.429 1h5.675c.617.001 1.125.51 1.125 1.127 0 .134-.024.267-.071.393l-1.569 4.188h4.945l.057.002c.205.016.399.076.57.192.502.342.646 1.042.312 1.55L9.858 18.494a1.13 1.13 0 01-1.614.29 1.14 1.14 0 01-.44-.729c-.023-.149-.014-.3.022-.447l1.597-6.546H4.927a.499.499 0 00-.344-.475h-.001l-.016-.005.017.005c.039.014.048.084.04.181a.805.805 0 01-.036.294l-1.069-.519zm.923.019l-.026-.002a.607.607 0 01-.214-.057l-.002-.001-.087-.049-.056-.044a.612.612 0 01-.115-.133l-.036-.063-.015-.035a.608.608 0 01-.045-.176l-.004-.101.001-.011v-.001l.004-.028.963-7.813a.625.625 0 01.62-.548h5.674a.63.63 0 01.586.846l-1.568 4.187a.5.5 0 00.468.675h4.944a.63.63 0 01.522.97L9.438 18.223a.623.623 0 01-1.127-.491l1.598-6.551a.502.502 0 00-.486-.619H4.441zm.012.001l.004.001h.016l-.026-.002.006.001zm-.182-.017a.5.5 0 00-.067-.041l.067.041zm-.426-.52a.548.548 0 01-.004.07l-.013-.014.003-.014a.121.121 0 00.014-.042z"></path>
+
+</g>
+</svg>
+</div>
+<div>
+  <h2 class="font-heading text-lg md:text-1.5xl text-navy">
+    Apply with Confidence
+  </h2>
+  <p class="mt-4 text-base">
+    Use our tools to manage applications, organize documents, and track progress—all with step-by-step guidance to ensure success.
+  </p>
+</div>
+</li>
+<li class="group w-full relative grid grid-cols-auto-span items-start gap-8 text-left">
+<div class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-amber-500/30 from-yellow-200/75 to-orange-200/75 text-amber-500 ring-amber-400/60">
+<svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; ;" viewBox="0 0 20 20" fill="currentColor" fill-rule="evenodd">
+<g buffered-rendering="static">
+
+
+<path d="M7.812 6.867l-.83-1.811a1.9 1.9 0 001.728-.792l.829 1.81a4.317 4.317 0 013.721.975l2.453-1.786A1.903 1.903 0 0016.832 6.8L14.38 8.585c.414.96.464 2.039.141 3.034l2.154 1.283a1.902 1.902 0 00-.972 1.633l-2.156-1.283a4.297 4.297 0 01-3.122 1.341c-.52 0-1.019-.092-1.481-.261l-1.058 1.637a1.9 1.9 0 00-1.597-1.031l1.059-1.64a4.3 4.3 0 01-1.123-2.06v.001H4.042a1.894 1.894 0 000-1.901h2.183a4.306 4.306 0 011.587-2.471zm2.613.972a2.461 2.461 0 00-2.38 2.449 2.461 2.461 0 002.38 2.449 2.45 2.45 0 002.449-2.449 2.45 2.45 0 00-2.449-2.449z" fill-opacity=".3" fill-rule="nonzero"></path>
+<path d="M6.196 14.935l.061-.001c1.041 0 1.899.857 1.899 1.899a1.908 1.908 0 01-1.899 1.899l-.063-.001a1.907 1.907 0 01-1.836-1.898c0-1.019.82-1.865 1.838-1.898zm11.405-2.275a1.908 1.908 0 011.838 1.899 1.908 1.908 0 01-1.838 1.899 1.908 1.908 0 01-1.838-1.899c0-1.019.819-1.866 1.838-1.899zM2.399 8.39a1.909 1.909 0 011.898 1.899 1.908 1.908 0 01-1.899 1.899h-.001a1.909 1.909 0 01-1.898-1.899c0-1.042.858-1.899 1.9-1.899H2.4h-.001zm15.202-5.224A1.91 1.91 0 0119.5 5.065v.001a1.91 1.91 0 01-1.9 1.9 1.91 1.91 0 01-1.9-1.9c0-1.042.858-1.9 1.9-1.9h.001zM7.161 1.268c1.041 0 1.899.857 1.899 1.898a1.908 1.908 0 01-1.899 1.899 1.907 1.907 0 01-1.898-1.898c0-1.042.857-1.899 1.898-1.899z" fill-opacity=".7" fill-rule="nonzero"></path>
+<path d="M2.894 8.457c.486.133.896.455 1.145.881h2.186a4.306 4.306 0 011.587-2.471l-.83-1.811a1.907 1.907 0 01-1.719-1.889c0-1.042.857-1.899 1.898-1.899s1.899.857 1.899 1.898c0 .524-.22.946-.34 1.121l.819 1.787a4.317 4.317 0 013.721.975l2.451-1.784A1.91 1.91 0 0117.6 3.166h.001A1.91 1.91 0 0119.5 5.065v.001a1.91 1.91 0 01-1.9 1.9c-.273 0-.534-.059-.77-.165l-2.45 1.784c.414.96.464 2.039.141 3.034l2.154 1.283a1.902 1.902 0 00-.972 1.633l-2.156-1.283a4.297 4.297 0 01-3.122 1.341c-.52 0-1.019-.092-1.481-.261l-1.026 1.587c.151.272.238.584.238.914a1.908 1.908 0 01-1.899 1.899l-.063-.001a1.907 1.907 0 01-1.836-1.898 1.91 1.91 0 011.345-1.816.5.5 0 00.493.418v-.01a.5.5 0 01-.401-.433 1.83 1.83 0 01.401-.057l.095-.001 1.057-1.636a4.292 4.292 0 01-.984-1.58.5.5 0 00.361-.48c0 .082-.238.289-.386.41l-.016-.051-.007-.023c.136-.237.38-.622.407-.384a.617.617 0 00-.01-.062c.155.687.499 1.317.992 1.82.164.167.19.425.063.621l-1.057 1.637a.5.5 0 01-.42.228l-.093.001a1.406 1.406 0 00-1.34 1.398 1.404 1.404 0 001.399 1.399c.767 0 1.399-.631 1.399-1.399 0-.243-.064-.472-.175-.671a.502.502 0 01.017-.514l1.026-1.587a.5.5 0 01.592-.199c.408.15.849.231 1.309.231h.001a3.797 3.797 0 002.758-1.185.5.5 0 01.619-.086l1.544.919c.104-.284.26-.547.461-.774l-1.543-.918a.501.501 0 01-.22-.585 3.801 3.801 0 00-.124-2.681.499.499 0 01.165-.602l2.45-1.784a.5.5 0 01.499-.052c.173.078.364.121.565.121.768 0 1.4-.632 1.4-1.4v-.001c0-.767-.632-1.399-1.399-1.399H17.6a1.407 1.407 0 00-1.392 1.546.5.5 0 01-.203.457l-2.451 1.784a.5.5 0 01-.623-.027 3.818 3.818 0 00-3.29-.863.5.5 0 01-.557-.281l-.818-1.787a.5.5 0 01.042-.49 1.57 1.57 0 00.252-.839c0-.767-.632-1.398-1.399-1.398s-1.398.631-1.398 1.399c0 .722.56 1.324 1.267 1.392a.502.502 0 01.407.289l.83 1.811a.5.5 0 01-.152.605 3.814 3.814 0 00-1.402 2.185.502.502 0 01-.488.389H4.039a.5.5 0 01-.432-.248 1.404 1.404 0 00-1.208-.7c-.768 0-1.4.632-1.4 1.399s.631 1.398 1.398 1.399h.001c.514 0 .966-.284 1.21-.701a.498.498 0 01.431-.248h2.186v.5h-.456c-.027-.019-.044-.023-.044-.001v.001H4.039c-.33.566-.944.949-1.641.949h-.001a1.909 1.909 0 01-1.898-1.899c0-1.042.858-1.899 1.9-1.899.171 0 .337.023.495.067a.5.5 0 000 0zm14.707 4.203a1.908 1.908 0 011.838 1.899 1.908 1.908 0 01-1.838 1.899 1.908 1.908 0 01-1.838-1.899c0-1.019.819-1.866 1.838-1.899zm0 .5a1.407 1.407 0 011.338 1.399c0 .742-.589 1.36-1.327 1.398a1.407 1.407 0 01-1.349-1.398c0-.742.589-1.36 1.327-1.398l.011-.001zm-7.176-5.821h-.014a2.964 2.964 0 00-2.866 2.949 2.964 2.964 0 002.866 2.949h.014a2.95 2.95 0 002.949-2.949 2.95 2.95 0 00-2.949-2.949zm0 .5a2.461 2.461 0 00-2.38 2.449 2.461 2.461 0 002.38 2.449 2.45 2.45 0 002.449-2.449 2.45 2.45 0 00-2.449-2.449z"></path>
+
+</g>
+</svg>
+</div>
+<div>
+  <h2 class="font-heading text-lg md:text-1.5xl text-navy">
+    Make Your Move
+  </h2>
+  <p class="mt-4 text-base">
+    Transition seamlessly with visa support, cultural readiness tips, and mentorship from our experienced network to thrive abroad.
+  </p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+
+<!-- Web Section 4 | Contact Us Redircting -->
+<section class="relative bg-white overflow-visible">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-7 items-center gap-x-8 gap-y-4 px-10 md:px-14 xl:px-20 py-0 rounded-3xl card bg-gradient-to-br from-amber-50 via-orange-50 to-pink-200 ring-1 ring-violet-900/10 ring-inset">
+      <div class="lg:order-last lg:col-span-3 lg:-mr-9 -mb-6 -mt-3 lg:mt-0">
+        <img src="images/cool-bird-d997174954ab5a152ccac3d2dcb19c8d.png" alt="" width="400" class="w-full max-w-lg lg:max-w-max mx-auto">
+      </div>
+      <div class="space-y-4 py-6 md:py-10 lg:py-12 xl:py-20 lg:col-span-4">
+        <h2 class="text-2xl md:text-3xl font-heading text-navy -mt-1">Have Queries!!
+        
+</h2>
+        <p class="block text-lg pb-3">Have questions or need assistance with your study abroad journey? Our team is just a message away! Whether you’re looking for guidance on applications, test preparation, or personalized study plans, we’re here to provide expert support!</p>
+        <a href="file:///D:/CodeX/Abroad%20Campus/Contact%20Us%20Page%20(Landing%20Page%20Redirecting)/index.html" class="gap-2 btn-xl btn-purple group/btn w-full sm:w-auto btn-border-dark rounded-full">Ask Us!
+        
+<div class="flex items-center opacity-50 group-hover/btn:opacity-100 transition-opacity ">
+  <svg role="img" viewBox="0 0 16 16" width="0" height="10" fill="currentColor" class="w-0 group-hover/btn:w-2.5 h-3 translate-x-2.5 ease-out duration-200 transition-all transform-gpu">
+    <path d="M1 9h14a1 1 0 000-2H1a1 1 0 000 2z"></path>
+  </svg>
+  <svg role="img" viewBox="0 0 16 16" width="10" height="10" fill="currentColor" class="size-[0.7em]">
+    <path d="M7.293 1.707L13.586 8l-6.293 6.293a1 1 0 001.414 1.414l7-7a.999.999 0 000-1.414l-7-7a1 1 0 00-1.414 1.414z"></path>
+  </svg>
+</div>
+</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Web Section 5 -->
+<section class="relative bg-white py-24 xl:py-32">
+  <div class="rotate-3 absolute -inset-x-12 -bottom-6 h-12 bg-gradient-to-r from-sky-300 via-indigo-300 to-pink-300 blur-3xl">
+  </div>
+  <div class="absolute inset-0 bg-gradient-[100deg] from-sky-300/10 via-indigo-300/10 to-pink-300/10 [-webkit-mask-image:linear-gradient(to_top,rgba(255,255,255,1)_75%,rgba(255,255,255,0))]">
+  </div>
+  <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-center overflow-hidden">
+    <img width="400" src="images/better-together-bg-630f84dc36727cb3216fe4536c3687db.png" class="lg:order-last w-full max-w-lg mx-auto mb-6 lg:mb-0" alt="">
+    <div class="space-y-3">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-heading text-navy">Confuse how to start?</h2>
+      <p class="block text-lg pb-3">With Abroad Campus, achieving your study abroad dreams is easier. We create a personalized plan tailored to your goals, academic background, and finances, guiding you through university selection, test prep, and scholarship opportunities. Let us simplify the process, so you can focus on your global future!</p>
+      <a href="https://filetransfer.io/data-package/gJ0ePoRz#link" class="gap-2 btn-xl btn-purple group/btn btn-border-dark rounded-full">Get Your Personalized Plan
+<div class="flex items-center opacity-50 group-hover/btn:opacity-100 transition-opacity ">
+  <svg role="img" viewBox="0 0 16 16" width="0" height="10" fill="currentColor" class="w-0 group-hover/btn:w-2.5 h-3 translate-x-2.5 ease-out duration-200 transition-all transform-gpu">
+    <path d="M1 9h14a1 1 0 000-2H1a1 1 0 000 2z"></path>
+  </svg>
+  <svg role="img" viewBox="0 0 16 16" width="10" height="10" fill="currentColor" class="size-[0.7em]">
+    <path d="M7.293 1.707L13.586 8l-6.293 6.293a1 1 0 001.414 1.414l7-7a.999.999 0 000-1.414l-7-7a1 1 0 00-1.414 1.414z"></path>
+  </svg>
+</div>
+</a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<div role="alert" class="fixed bottom-6 mb-14 lg:mb-0 left-1/2 transform -translate-x-1/2 w-max max-w-[94%] sm:max-w-lg z-50">
+</div><div role="alert" class="fixed bottom-6 mb-14 lg:mb-0 left-1/2 transform -translate-x-1/2 w-max max-w-[94%] sm:max-w-lg z-50">
+</div><div role="alert" class="fixed bottom-6 mb-14 lg:mb-0 left-1/2 transform -translate-x-1/2 w-max max-w-[94%] sm:max-w-lg z-50">
+</div><div role="alert" class="fixed bottom-6 mb-14 lg:mb-0 left-1/2 transform -translate-x-1/2 w-max max-w-[94%] sm:max-w-lg z-50">
+</div><div role="alert" class="fixed bottom-6 mb-14 lg:mb-0 left-1/2 transform -translate-x-1/2 w-max max-w-[94%] sm:max-w-lg z-50"></div>
+<script src="js/app.js"></script></div>
+
+
+<!-- Footer -->
+<footer class="relative text-sm text-navy-400 leading-6 pb-8 pt-12 lg:pt-20 text-medium bg-navy-950 bg-gradient-to-br from-gray-900/50 via-navy-900/50 to-navy-950/50" role="contentinfo">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-12 lg:pb-20 grid md:grid-cols-auto-span items-start gap-10 md:gap-16">
+    <!-- Footer Fly Image -->
+    
+  </title>
+  <desc id="description-GBEb_n63RxGGIVAy"></desc>
+
+  <g buffered-rendering="static">
+      <path d="M57.413 10.134h9.454c8.409 0 15.236 6.827 15.236 15.236v33.243c0 8.409-6.827 15.236-15.236 15.236h-.745c-4.328-.677-6.205-1.975-7.655-3.072l-12.02-9.883a1.692 1.692 0 0 0-2.128 0l-3.905 3.211-10.998-9.043a1.688 1.688 0 0 0-2.127 0L12.01 68.503c-3.075 2.501-5.109 2.039-6.428 1.894C2.175 67.601 0 63.359 0 58.613V25.37c0-8.409 6.827-15.236 15.237-15.236h9.433l-.017.038-.318.927-.099.318-.428 1.899-.059.333-.188 1.902-.025.522-.004.183.018.872.043.511.106.8.135.72.16.663.208.718.54 1.52.178.456.94 1.986.332.61 1.087 1.866.416.673 1.517 2.234.219.296 1.974 2.569.638.791 2.254 2.635.463.507 1.858 1.999.736.762 1.216 1.208-.244.204-.152.137c-.413.385-.805.794-1.172 1.224a10.42 10.42 0 0 0-.504.644 8.319 8.319 0 0 0-.651 1.064 6.234 6.234 0 0 0-.261.591 5.47 5.47 0 0 0-.353 1.606l-.007.475a5.64 5.64 0 0 0 .403 1.953 5.44 5.44 0 0 0 1.086 1.703c.338.36.723.674 1.145.932.359.22.742.401 1.14.539a6.39 6.39 0 0 0 2.692.306h.005a6.072 6.072 0 0 0 2.22-.659c.298-.158.582-.341.848-.549a5.438 5.438 0 0 0 1.71-2.274c.28-.699.417-1.446.405-2.198l-.022-.393a5.535 5.535 0 0 0-.368-1.513 6.284 6.284 0 0 0-.285-.618 8.49 8.49 0 0 0-.67-1.061 11.022 11.022 0 0 0-.354-.453 14.594 14.594 0 0 0-1.308-1.37l-.329-.28.557-.55 2.394-2.5.828-.909 1.287-1.448.837-.979 1.194-1.454.808-1.016 1.187-1.587.599-.821.85-1.271.708-1.083 1.334-2.323.763-1.524.022-.047.584-1.414a.531.531 0 0 0 .02-.056l.629-1.962.066-.286.273-1.562.053-.423.016-.259.019-.978-.005-.182-.05-.876-.062-.68-.31-1.961c-.005-.026-.01-.052-.018-.078l-.398-1.45-.137-.403-.179-.446Zm4.494 41.455a3.662 3.662 0 0 0-3.61 3.61 3.663 3.663 0 0 0 3.61 3.609 3.665 3.665 0 0 0 3.611-3.609 3.663 3.663 0 0 0-3.611-3.61Z" fill="url(#ij6_Radial1)"></path>
+    <path d="M35.639 72.544l-.637.535a3.332 3.332 0 01-2.09.762H15.235a15.176 15.176 0 01-9.654-3.451c1.319.145 3.353.607 6.428-1.894l15.277-13.44a1.693 1.693 0 012.127 0l10.997 9.042 3.904-3.21c.619-.5 1.51-.5 2.128 0l12.019 9.882c1.45 1.097 3.327 2.394 7.654 3.071H58.12a3.394 3.394 0 01-1.963-.654l-.14-.108-.593-.493a1.247 1.247 0 00-.158-.159c-.672-.563-9.187-7.617-9.187-7.617a1 1 0 00-1.281.002s.021.026-9.038 7.615a1.12 1.12 0 00-.121.117zm26.262-20.96a3.678 3.678 0 00-3.61 3.609 3.68 3.68 0 003.61 3.609 3.68 3.68 0 003.61-3.609 3.678 3.678 0 00-3.61-3.609zM38.566 40.648L37.35 39.44l-.736-.762-1.858-1.999-.463-.507-2.253-2.634-.638-.791-1.974-2.569-.219-.296-1.517-2.234-.416-.673-1.087-1.866-.332-.61-.94-1.985-.178-.456-.539-1.52-.208-.718-.16-.663-.135-.72-.106-.8-.043-.511-.018-.872.004-.183.025-.522.188-1.901.059-.333.428-1.899.098-.318.318-.927.102-.24.506-1.112.351-.662.489-.806.487-.718.347-.456.4-.482.44-.484.377-.378.918-.808.671-.549c.016-.014.033-.026.05-.038l.794-.537.631-.402 1.198-.631c.018-.011.039-.02.058-.029l1.698-.705.157-.059 1.51-.442.638-.143.862-.173.572-.087.877-.109.598-.053 1.187-.063.465-.005.881.018.229.013 1.276.106 1.687.238.195.041 1.668.415.49.146.544.188.663.251.524.222.77.363.485.249.872.512.325.2 1.189.868.341.296.828.754.041.041.703.754.242.273.825 1.096.168.262.655 1.106.197.379.369.825.386.963.137.403.398 1.45a.89.89 0 01.018.078l.31 1.961.062.679.05.876.005.182-.019.978-.016.259-.053.423-.273 1.562-.066.286-.629 1.962a.626.626 0 01-.02.056l-.584 1.414-.022.047-.763 1.523-1.334 2.323-.708 1.083-.849 1.271-.599.821-1.187 1.587-.808 1.016-1.194 1.453-.837.979-1.287 1.448-.828.909-2.394 2.5-.556.55.328.28c.465.428.902.885 1.308 1.37.122.148.24.299.354.453.249.336.473.691.67 1.06.106.2.201.407.285.618.191.484.32.996.368 1.513l.022.393c.012.752-.125 1.5-.405 2.198a5.438 5.438 0 01-1.71 2.274c-.266.208-.55.391-.848.549a6.08 6.08 0 01-2.219.659h-.005a6.403 6.403 0 01-2.692-.306 5.882 5.882 0 01-1.14-.539 5.523 5.523 0 01-1.145-.932 5.458 5.458 0 01-1.086-1.703 5.662 5.662 0 01-.403-1.953l.007-.475a5.47 5.47 0 01.353-1.606c.077-.202.164-.399.261-.591.19-.37.408-.725.651-1.063.159-.221.328-.436.504-.644.367-.43.759-.839 1.172-1.224l.152-.137.244-.204z" class="fill-transparent"></path>
+    <path d="M35.002 73.079l9.796-8.267a1 1 0 011.281-.002l9.938 8.269c.604.492 1.36.761 2.139.762h-25.28c.776 0 1.527-.269 2.126-.762zM41.1 43.568l.096.028c.031.015.057.036.085.055l.08.071c.198.182.39.373.575.569.13.139.257.282.379.43.155.187.3.383.432.587.057.09.11.181.16.276.043.082.082.167.116.253.06.15.105.308.119.469l-.003.302a1.726 1.726 0 01-.817 1.343 2.333 2.333 0 01-.994.327l-.373.011-.315-.028a2.398 2.398 0 01-.433-.105 2.07 2.07 0 01-.41-.192l-.246-.18a1.685 1.685 0 01-.56-.96 2.418 2.418 0 01-.029-.19l-.009-.288c.005-.078.017-.155.034-.232.043-.168.105-.331.183-.486.101-.194.216-.381.344-.559.213-.288.444-.562.691-.821.159-.168.322-.331.492-.488l.121-.109c.084-.055.085-.055.181-.083h.101zM40.481 3.42l.039-.003v33.665l-.084-.155a94.101 94.101 0 01-3.093-6.267 67.257 67.257 0 01-2.099-5.255 41.665 41.665 0 01-1.265-4.326c-.265-1.163-.469-2.343-.553-3.535a16.923 16.923 0 01-.029-1.528c.008-.444.026-.887.054-1.33.044-.696.115-1.391.217-2.081.081-.543.181-1.084.304-1.619.098-.425.212-.847.342-1.262.188-.6.413-1.186.675-1.758.096-.206.199-.411.307-.612.65-1.204 1.532-2.313 2.687-3.054a5.609 5.609 0 012.498-.88zm4.365.085l2.265.646c1.049.387 2.059.891 2.987 1.521a11.984 11.984 0 013.212 3.204c.502.748.918 1.555 1.243 2.398.471 1.247.763 2.554.866 3.882.03.348.047.697.054 1.046.008.324.006.649-.02.973-.064.725-.2 1.442-.407 2.14a17.03 17.03 0 01-.587 1.684c-.28.685-.591 1.357-.932 2.013-.754 1.457-1.623 2.852-2.553 4.201a65.451 65.451 0 01-3.683 4.806 91.02 91.02 0 01-4.417 4.896 93.66 93.66 0 002.907-5.949c.5-1.124.971-2.26 1.414-3.407.487-1.26.927-2.537 1.317-3.83.29-.969.546-1.948.757-2.938.181-.849.323-1.707.411-2.57.074-.72.101-1.444.083-2.166a30.867 30.867 0 00-.049-1.325c-.106-1.775-.376-3.545-.894-5.248a15.341 15.341 0 00-.714-1.892c-.663-1.444-1.588-2.793-2.84-3.778l-.42-.307z" fill="white"></path>
+      <path d="M179.213 64.297l-10.751-23.015c-.898-1.917-1.433-2.618-2.331-3.431l-.874-.788c-.697-.676-1.155-1.302-1.155-2.045 0-1.064.843-1.96 2.378-1.96h9.334c1.465 0 2.378.762 2.378 1.9 0 .635-.292 1.111-.661 1.578-.438.555-1.008 1.096-1.008 2.082 0 .618.18 1.234.527 2.021l6.416 15.025 5.755-14.647c.354-.974.596-1.832.596-2.519 0-1.069-.581-1.505-1.029-1.983-.39-.415-.702-.854-.702-1.557 0-1.149.935-1.9 2.193-1.9h5.748c1.612 0 2.378.834 2.378 1.9 0 .682-.393 1.314-1.166 1.996l-.813.668c-1.132.925-1.656 2.263-2.251 3.647l-8.716 20.998c-1.03 2.455-2.563 5.863-4.905 8.659-2.379 2.84-5.587 5.048-9.932 5.048-3.638 0-5.84-1.737-5.84-4.24 0-2.293 1.696-4.12 3.924-4.12 1.22 0 1.855.576 2.499 1.169.532.489 1.072.991 2.137.991.988 0 1.908-.418 2.742-1.093 1.274-1.03 2.341-2.652 3.129-4.384zm63.175-.082c4.839 0 8.804-1.658 11.897-4.967 3.09-3.304 4.636-7.281 4.636-11.931 0-4.539-1.469-8.268-4.396-11.191-2.926-2.921-6.723-4.388-11.396-4.388-4.92 0-8.944 1.597-12.077 4.78-3.135 3.186-4.703 7.045-4.703 11.578 0 4.493 1.496 8.301 4.483 11.425 2.99 3.126 6.84 4.694 11.556 4.694zm-40.921-.36c2.798 0 4.788-1.884 4.788-4.6 0-2.652-2.055-4.54-4.788-4.54-2.863 0-4.912 1.891-4.912 4.54 0 2.713 2.05 4.6 4.912 4.6zm9.964-4.305l.681-.72c.81-.787 1.071-1.582 1.071-3.774V42.097c0-1.895-.258-2.741-1.062-3.465l-.801-.718c-.785-.693-1.043-1.124-1.043-1.816 0-.984.763-1.791 1.99-2.071l5.44-1.32c.52-.126 1.107-.249 1.562-.249.626 0 1.138.206 1.497.563.36.358.572.873.572 1.517v20.518c0 2.069.251 3.031 1.115 3.758a.359.359 0 01.039.039l.608.708c.764.743 1.081 1.236 1.081 1.914 0 1.209-.912 1.9-2.377 1.9h-9.211c-1.396 0-2.316-.687-2.316-1.9 0-.681.317-1.178 1.154-1.925zm-61.567.001l.681-.721c.811-.787 1.071-1.582 1.071-3.774V27.999c0-1.835-.194-2.736-1.053-3.459l-.822-.796c-.709-.689-.968-1.116-.968-1.805 0-.985.767-1.789 1.927-2.07l5.378-1.32c.521-.126 1.107-.249 1.563-.249.621 0 1.147.187 1.522.542.376.356.608.885.608 1.598v34.616c0 2.074.258 2.981 1.125 3.766l.694.734c.769.748 1.025 1.238 1.025 1.919 0 .502-.153.907-.426 1.216-.385.435-1.03.684-1.89.684h-9.21c-.86 0-1.505-.249-1.891-.684-.272-.309-.425-.714-.425-1.216 0-.682.253-1.176 1.091-1.924zm-25.079-13.934v9.319c0 1.404.278 2.701 1.435 3.768l.748.726c.838.813 1.093 1.3 1.093 2.045 0 1.138-.913 1.9-2.378 1.9h-10.385c-1.465 0-2.377-.762-2.377-1.9 0-.884.259-1.303 1.097-2.049l.745-.724c.868-.786 1.434-1.857 1.434-3.766V30.039c0-1.517-.336-2.758-1.435-3.769l-.749-.726c-.77-.747-1.092-1.238-1.092-1.985 0-1.206.915-1.96 2.377-1.96h27.817c1.063 0 1.997.237 2.594.822.415.407.68.981.71 1.778l.433 6.421c.043.803-.194 1.472-.657 1.885-.319.284-.748.454-1.288.454-.681 0-1.203-.257-1.669-.701-.419-.399-.792-.959-1.213-1.618-1.016-1.624-1.489-2.208-2.572-2.967-1.507-1.112-3.803-1.494-8.145-1.494-2.505 0-4.086.109-5.082.366-.644.166-1.016.382-1.215.699-.204.324-.226.734-.226 1.235v12.618h6.523c1.561 0 2.659-.282 3.931-2.021l.007-.01c.51-.649.879-1.127 1.23-1.444.409-.37.802-.545 1.323-.545a1.9 1.9 0 011.883 1.901v8.699c0 1.165-.908 1.96-1.883 1.96-.485 0-.879-.173-1.289-.535-.353-.31-.723-.775-1.203-1.396-1.392-1.802-2.375-2.089-3.999-2.089h-6.523zm110.214-.22c0-3.121.68-5.364 2.089-6.713 1.392-1.332 2.888-2.006 4.496-2.006 2.212 0 4.205 1.238 6.003 3.672 1.837 2.489 2.746 5.853 2.746 10.086 0 3.124-.682 5.388-2.093 6.776-1.391 1.369-2.886 2.063-4.493 2.063-2.212 0-4.204-1.248-6.002-3.701-1.838-2.51-2.746-5.904-2.746-10.177zm-18.202-16.878c2.804 0 4.788-1.578 4.788-4.3 0-2.658-1.982-4.24-4.788-4.24-2.871 0-4.851 1.583-4.851 4.24 0 2.656 1.981 4.3 4.851 4.3z" class="fill-white"></path>
+  </g>
+  <defs>
+    <radialGradient id="ij6_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(43.593 41.714) scale(59.4764)">
+      <stop offset="0" stop-color="#ba7bf0"></stop>
+      <stop offset=".45" stop-color="#996bec"></stop>
+      <stop offset="1" stop-color="#5046e4"></stop>
+    </radialGradient>
+  </defs>
+</svg>
+
+<!-- Footer Links -->
+</a>
+<div class="grid grid-cols-fit-24 gap-10 items-start lg:justify-items-center">
+  <dl>
+    <dt class="font-bold uppercase tracking-wider text-xs text-white mb-3">Know More</dt>
+    <dd class="font-medium flex flex-col items-start">
+      <a href="file:///E:/The%20Abroad%20Campus/About%20Us.html" class="hover:text-violet-500 transition-colors">About Us</a>
+      <a href="file:///D:/CodeX/Abroad%20Campus/Contact%20Us%20Page%20(Landing%20Page%20Redirecting)/index.html" class="hover:text-violet-500 transition-colors">Contact Us</a>
+    </dd>
+  </dl>
+  <dl>
+    <dt class="font-bold uppercase tracking-wider text-xs text-white mb-3">Test Prep</dt>
+    <dd class="font-medium flex flex-col items-start">
+      <a href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20SAT/index.html" class="hover:text-violet-500 transition-colors">SAT</a>
+      <a href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20ACT/index.html" class="hover:text-violet-500 transition-colors"> ACT</a>
+      <a href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20TOEFL/index.html" class="hover:text-violet-500 transition-colors">TOEFL</a>
+      <a href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20IELTS/index.html" class="hover:text-violet-500 transition-colors">IELTS</a>
+      <a href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20GMAT/index.html" class="hover:text-violet-500 transition-colors">GMAT</a>
+      <a href="file:///E:/The%20Abroad%20Campus/Test%20Prep%20-%20GRE/index.html" class="hover:text-violet-500 transition-colors">GRE</a></dd>
+  </dl>
+  <dl>
+    <dt class="font-bold uppercase tracking-wider text-xs text-white mb-3">Resources</dt>
+    <dd class="font-medium flex flex-col items-start">
+      <a href="#" class="hover:text-violet-500 transition-colors">Universities</a>
+      <a href="#" class="hover:text-violet-500 transition-colors">Test Prep</a>
+      
+      </a></dd></dl>
+  <dl>
+    <dt class="font-bold uppercase tracking-wider text-xs text-white mb-3">Connect</dt>
+    <dd class="font-medium flex flex-col items-start">
+      <a href="#" class="hover:text-violet-500 transition-colors">GitHub</a>
+      <a href="#" class="hover:text-violet-500 transition-colors">Twitter</a>
+      <a href="#" class="hover:text-violet-500 transition-colors">Instagram</a>
+      <a href="#" class="hover:text-violet-500 transition-colors">Facebook</a>
+      <a href="#" class="hover:text-violet-500 transition-colors">Linkedin</a>
+    </dd></dl>
+</div>
+</div>
+
+<p class="text-xs text-center mb-0">© The Abroad Campus - A Codebit Initiative</p>
+</footer></body></html>
